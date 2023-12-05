@@ -35,7 +35,7 @@
   .container {
     padding: 2rem;
     
-    max-width: 400px;
+    max-width: 750px;
 
     display: flex;
     flex: 1;
@@ -47,19 +47,44 @@
     overflow-y: auto;
   }
 
+  .mobile #canvas {
+    opacity: 0.6;
+  }
+
+  .mobile .container {
+    max-width: 100%;
+    padding: 4rem;
+    justify-self: center;
+    align-self: flex-start;
+  }
+
+  .mobile section p {
+    max-width: 100%;
+  }
+
   @media screen and (max-width: 768px) {
     #canvas {
       opacity: 0.6;
     }
 
     .container {
+      max-width: 100%;
+      padding: 3rem;
       justify-self: center;
       align-self: flex-start;
+    }
+
+    section p {
+      max-width: 100%;
     }
   }
 
   section {
     margin-bottom: 1.4rem;
+  }
+
+  section p {
+    max-width: 380px;
   }
 
   section .more {
@@ -96,7 +121,6 @@
   h3 {
     font-size: 1.4rem;
     font-weight: 700;
-    margin-bottom: 0.8rem;
     display: inline-block;
   }
 
@@ -124,8 +148,12 @@
     text-shadow: #ffffff 1px 0 10px;
   }
 
+  section > header {
+    margin-bottom: 0.8rem;
+  }
+
   section > header > div {
-    display: inline-block;
+    display: inline;
   }
 
   section.active > header > div {
@@ -144,7 +172,7 @@
     border-radius: 100px;
     top: 3px;
     left: -8px;
-    transform: rotateX('45deg');
+    transform: rotateX(45deg);
   }
   .chevron-right::after {
     content: "";

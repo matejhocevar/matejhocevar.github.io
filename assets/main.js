@@ -69,7 +69,7 @@ You can dive deep into the source code at %chttps://github.com/matejhocevar/mate
   );
 };
 
-export const isMobile = (function () {
+const isMobile = (function () {
   let check = false;
   (function (a) {
     if (
@@ -84,3 +84,7 @@ export const isMobile = (function () {
   })(navigator.userAgent || navigator.vendor || window.opera);
   return check;
 })();
+
+document.body.classList.add(isMobile ? "mobile" : "desktop");
+
+export { isMobile };
