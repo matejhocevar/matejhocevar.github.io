@@ -1,0 +1,18 @@
+# Dependency directories (such as npm, yarn, etc.)
+/node_modules
+/bower_components
+
+# Build files
+/build
+/dist
+
+# Compiled output (if any)
+*.min.js
+*.min.css
+
+# Environment-specific files
+.env
+
+# Miscellaneous
+.DS_Store
+Thumbs.db
