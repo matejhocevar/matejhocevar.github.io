@@ -8,10 +8,10 @@ import { RenderPass } from "three/addons/postprocessing/RenderPass.js";
 import { FilmPass } from "three/addons/postprocessing/FilmPass.js";
 import { GUI } from "three/addons/libs/lil-gui.module.min.js";
 import { gsap } from "gsap";
+import { printDeveloperMessage, isMobile } from "./main.js";
 
 const canvasElement = document.querySelector("#canvas");
 
-const isMobile = innerWidth < 768;
 const isDebug = false;
 
 class Render3dModel {
@@ -211,7 +211,9 @@ class Render3dModel {
         this.startRotation();
         this._animateInitialZoomIn();
       },
-      (_) => {},
+      (_) => {
+        printDeveloperMessage();
+      },
       (error) => {
         console.error(error);
       }
