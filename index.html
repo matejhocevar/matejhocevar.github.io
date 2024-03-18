@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/style.css" />
 
     <script type="importmap">
       {
@@ -21,121 +21,159 @@
     </script>
     <script type="module" src="./assets/render_3d_model.js"></script>
     <script type="module" src="./assets/main.js"></script>
-    <script>
-      
-    </script>
+    <script></script>
   </head>
   <body>
     <canvas id="canvas"></canvas>
     <div class="container">
-        <section id="intro">
-          <h2>Hello there, fellow explorer! 👨‍🚀</h2>
+      <section id="intro">
+        <h2>Hello there, fellow explorer! 👨‍🚀</h2>
 
-          <h1 onclick="toggleContent('', 'start')">👋 My name is Matej</h1>
+        <h1 onclick="toggleContent('', 'start')">👋 My name is Matej</h1>
 
-          <p>
-            I'm a Lead Software Engineer working at a Swedish 🇸🇪 consultancy company named <a href="https://tretton37.com">tretton37</a>. I work as a
-            full-stack engineer.
-          </p>
+        <p>
+          I'm a Lead Software Engineer working at a Swedish 🇸🇪 consultancy company named
+          <a href="https://tretton37.com">tretton37</a>. I work as a full-stack engineer.
+        </p>
 
-          <p>I live in a beautiful, small country called <a href="https://www.slovenia.info">Slovenia</a> 🇸🇮.</p>
-        </section>
+        <p>I live in a beautiful, small country called <a href="https://www.slovenia.info">Slovenia</a> 🇸🇮.</p>
+      </section>
 
-        <section id="follow-me">
-          <header onclick="toggleContent('follow-me', 'start')">
-            <div><span class="chevron-right"></span></div>
-            <h3>Follow me at</h3>
-          </header>
-          <ul style="margin-left: 42px">
-            <li><a href="https://linkedin.com/in/matej-hocevar">linkedin/matejhocevar</a></li>
-            <li><a href="https://github.com/matejhocevar">github/matejhocevar</a></li>
-            <li><a href="https://twitter.com/qwertzr">x/qwertzr</a></li>
+      <section id="follow-me">
+        <header onclick="toggleContent('follow-me', 'start')">
+          <div><span class="chevron-right"></span></div>
+          <h3>Follow me at</h3>
+        </header>
+        <ul style="margin-left: 42px">
+          <li><a href="https://linkedin.com/in/matej-hocevar">linkedin/matejhocevar</a></li>
+          <li><a href="https://github.com/matejhocevar">github/matejhocevar</a></li>
+          <li><a href="https://twitter.com/qwertzr">x/qwertzr</a></li>
+          <li>
+            <a href="">medium/matejhocevar</a>
+          </li>
+        </ul>
+      </section>
+
+      <section id="blog" class="pointer">
+        <header onclick="toggleContent('blog', 'keyboard')">
+          <div><span class="chevron-right"></span></div>
+          <h3>Blog</h3>
+        </header>
+
+        <div class="more" data-height="20px">
+          <ul>
+            <li>Probably my next project. Coming soon... 😅</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="cv" class="pointer">
+        <header onclick="toggleContent('cv', 'face')">
+          <div><span class="chevron-right"></span></div>
+          <h3>Curriculum vitae</h3>
+        </header>
+
+        <div class="more" data-height="20px">
+          <ul>
             <li>
-              <a href="">medium/matejhocevar</a>
+              <a href="media/CV-matej_hocevar.pdf.pdf" target="_blank">CV-matej_hocevar.pdf</a>
             </li>
           </ul>
-        </section>
+        </div>
+      </section>
 
-        <section id="blog" class="pointer">
-          <header onclick="toggleContent('blog', 'keyboard')">
-            <div><span class="chevron-right"></span></div> 
-            <h3>Blog</h3>
-          </header>
+      <section id="stack" class="pointer">
+        <header onclick="toggleContent('stack', 'laptopBack')">
+          <div><span class="chevron-right"></span></div>
+          <h3>Stack</h3>
+        </header>
 
-          <div class="more" data-height="20px">
-            <ul>
-              <li>Probably my next project. Coming soon... 😅</li>
-            </ul>
-          </div>
-        </section>
+        <div class="more" data-height="135px">
+          <ul>
+            <li>Flutter & Dart</li>
+            <li>Swift, Kotlin & Java</li>
+            <li>JavaScript, TypeScript</li>
+            <li>Angular, React, NodeJS</li>
+            <li>Firebase & GCC</li>
+            <li>Django & Python</li>
+            <li>MySQL, PostgreSQL, MongoDB</li>
+          </ul>
+        </div>
+      </section>
 
-        <section id="cv" class="pointer">
-          <header onclick="toggleContent('cv', 'face')">
-            <div><span class="chevron-right"></span></div>
-            <h3>Curriculum vitae</h3>
-          </header>
-          
-          <div class="more" data-height="20px">
-            <ul>
-              <li>
-                <a href="assets/CV-matej_hocevar.pdf.pdf" target="_blank">CV-matej_hocevar.pdf</a>
-              </li>
-            </ul>
-          </div>
-        </section>
+      <section id="projects" class="pointer">
+        <header onclick="toggleContent('projects', 'numbers')">
+          <div><span class="chevron-right"></span></div>
+          <h3>Projects</h3>
+        </header>
 
-        <section id="stack" class="pointer">
-          <header onclick="toggleContent('stack', 'laptopBack')">
-            <div><span class="chevron-right"></span></div>
-            <h3>Stack</h3>
-          </header>
+        <div class="more" data-height="600px">
+          <ul>
+            <li>
+              <a href="https://github.com/matejhocevar/self_driving_car">Self-Driving car</a> (Flutter, Open Street
+              Map), 2024
+            </li>
+            <li>
+              <a href="https://github.com/matejhocevar/grid_touch_animation">Grid Touch animation</a> (Flutter), 2024
+            </li>
+            <li>
+              <a href="https://github.com/matejhocevar/react_native_goals_app">React Native examples</a> (React Native,
+              JavaScript, Expo), 2024
+            </li>
+            <li><a href="">Personal website matox.si</a> (JavaScript, three.js, GLSL), 2023</li>
+            <li><a href="https://olaf.sh">Olaf.sh</a> (Angular, TypeScript), 2023</li>
+            <li>
+              <a href="https://github.com/matejhocevar/knowabunga_app">Knowabunga23 mobile app</a> (Flutter), 2023
+            </li>
+            <li>Mobile app with custom Android OBD implementation (Flutter, Java), 2023</li>
+            <li>Untitled mobile game (Flutter, Flame), 2021-ongoing</li>
+            <li>
+              <a href="https://play.google.com/store/apps/details?id=com.thule.connect">Thule mobile app</a> (Flutter,
+              Kotlin, Swift), 2021-2023
+            </li>
+            <li>Weight picker plugin (Flutter, Dart), 2022-ongoing</li>
+            <li><a href="https://github.com/matejhocevar/luhn_algorithm">Luhn algoritm plugin</a> (Dart), 2022</li>
+            <li>Investitor dashboard (Angular, Firebase), 2022</li>
+            <li><a href="https://github.com/matejhocevar/upn-qr-generator">UPN QR generator</a> (JavaScript), 2022</li>
+            <li>
+              <a href="https://github.com/matejhocevar/hiking-adventures">Hiking adventures blog</a>Hiking adventures
+              blog (React, TypeScript), 2022
+            </li>
+            <li>Natankaj.si (React, Angular, Firebase), 2021</li>
+            <li>Gorenjc mobile app (Flutter, Firebase), 2020-2022</li>
+            <li>Gorenjc admin (Angular, React, Firebase), 2020-2022</li>
+            <li>Gorenjc backend (Flask, Python, Firebase, GCC), 2020-2022</li>
+            <li>Fuel calculator (Angular, Node.js, Valhalla), 2021</li>
+            <li><a href="https://github.com/matejhocevar/advent-of-code-2021">Advent of Code 2021</a> (Dart), 2021</li>
+            <li><a href="https://github.com/matejhocevar/color-pct">RGBA calculator</a> (JavaScript, HTML), 2021</li>
+            <li><a href="https://genius-loci.si">Genius Loci</a> (Angular, TypeScript, Firebase), 2019</li>
+            <li>Quiz platform (Angular, TypeScript), 2018</li>
+            <li>Bankomati mobile app (Swift), 2018</li>
+            <li><a href="https://birox.si"></a>Birox webshop (Django, Postgres, ML), 2017-2019</li>
+          </ul>
+        </div>
+      </section>
 
-          <div class="more" data-height="135px">
-            <ul>
-              <li>Flutter & Dart</li>
-              <li>Swift, Kotlin & Java</li>
-              <li>JavaScript, TypeScript</li>
-              <li>Angular, React, NodeJS</li>
-              <li>Firebase & GCC</li>
-              <li>Django & Python</li>
-              <li>MySQL, PostgreSQL, MongoDB</li>
-            </ul>
-          </div>
-        </section>
+      <section id="talks" class="pointer">
+        <header onclick="toggleContent('talks', 'face')">
+          <div><span class="chevron-right"></span></div>
+          <h3>Talks</h3>
+        </header>
 
-        <section id="projects" class="pointer">
-          <header onclick="toggleContent('projects', 'numbers')">
-            <div><span class="chevron-right"></span></div>
-            <h3>Projects</h3>
-          </header>
-
-          <div class="more" data-height="440px">
-            <ul>
-              <li><a href="">Personal website matox.si</a> (JavaScript, three.js, GLSL), 2023</li>
-              <li><a href="https://olaf.sh">Olaf.sh</a> (Angular, TypeScript), 2023</li>
-              <li><a href="https://github.com/matejhocevar/knowabunga_app">Knowabunga23 mobile app</a> (Flutter), 2023</li>
-              <li>Mobile app with custom Android OBD implementation (Flutter, Java), 2023</li>
-              <li>Untitled mobile game (Flutter, Flame), 2021-ongoing</li>
-              <li><a href="https://play.google.com/store/apps/details?id=com.thule.connect">Thule mobile app</a> (Flutter, Kotlin, Swift), 2021-2023</li>
-              <li>Weight picker plugin (Flutter, Dart), 2022-ongoing</li>
-              <li><a href="https://github.com/matejhocevar/luhn_algorithm">Luhn algoritm plugin</a> (Dart), 2022</li>
-              <li>Investitor dashboard (Angular, Firebase), 2022</li>
-              <li><a href="https://github.com/matejhocevar/upn-qr-generator">UPN QR generator</a> (JavaScript), 2022</li>
-              <li><a href="https://github.com/matejhocevar/hiking-adventures">Hiking adventures blog</a>Hiking adventures blog (React, TypeScript), 2022</li>
-              <li>Natankaj.si (React, Angular, Firebase), 2021</li>
-              <li>Gorenjc mobile app (Flutter, Firebase), 2020-2022</li>
-              <li>Gorenjc admin (Angular, React, Firebase), 2020-2022</li>
-              <li>Gorenjc backend (Flask, Python, Firebase, GCC), 2020-2022</li>
-              <li>Fuel calculator (Angular, Node.js, Valhalla), 2021</li>
-              <li><a href="https://github.com/matejhocevar/advent-of-code-2021">Advent of Code 2021</a> (Dart), 2021</li>
-              <li><a href="https://github.com/matejhocevar/color-pct">RGBA calculator</a> (JavaScript, HTML), 2021</li>
-              <li><a href="https://genius-loci.si">Genius Loci</a> (Angular, TypeScript, Firebase), 2019</li>
-              <li>Quiz platform (Angular, TypeScript), 2018</li>
-              <li>Bankomati mobile app (Swift), 2018</li>
-              <li><a href="https://birox.si"></a>Birox webshop (Django, Postgres, ML), 2017-2019</li>
-            </ul>
-          </div>
-        </section>
+        <div class="more" data-height="90px">
+          <ul>
+            <li><a href="media/PAC_From_Web_to_Mobile.pdf">From Web to Mobile</a>, Povio Academy Conference, 2024</li>
+            <li>
+              <a href="https://www.youtube.com/watch?v=LhuOyw7rYms"
+                >How can Development & Design Inspire Each Other to Reach Beyond the Ordinary Results</a
+              >, Knowabunga, 2023
+            </li>
+            <li>
+              <a href="media/Solving_things_with bisection.pdf">Solving things with bisection</a>, tretton37, 2022
+            </li>
+          </ul>
+        </div>
+      </section>
     </div>
   </body>
   <footer>
