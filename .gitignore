@@ -7,7 +7,6 @@
 /dist
 
 # Compiled output (if any)
-*.min.js
 *.min.css
 
 # Environment-specific files
